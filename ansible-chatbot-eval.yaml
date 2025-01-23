@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+#
+# Request body example:
+#  {query: "hi", model: "granite3-8b", provider: "my_rhoai_g3"}
+
+# Response content example:
+# {
+#    "conversation_id": "...",
+#    "response": "Hello! I'm Ansible Lightspeed, your virtual assistant for all things Ansible. How can I assist you today?",
+#    "referenced_documents": [],
+#    "truncated": false
+# }
+#
+
+description: "Ansible Chatbot Staging Evaluations"
+
+providers:
+  - id: https
+    config:
+      url: "https://stage.ai.ansible.redhat.com/api/v0/ai/chat/"
+      method: 'POST'
+      headers:
+        'Accept': 'application/json'
+        'Content-Type': 'application/json'
+        'Authorization': 'Bearer {{env.CHATBOT_STAGE_TOKEN}}'
+      body:
+        query: '{{user_query}}'
+        model: 'granite3-8b'
+        provider: 'my_rhoai_g3'
+      transformResponse: 'json.response' # Extract the "output" field from the response
+#      responseParser: >-
+#        '[RESPONSE]: '
+#        + json.response + '\\n\\n[REFERENCED_DOCUMENTS]:'
+#        + json.referenced_documents.map((d, n) =>
+#          { return '\\n[' + (n + 1) + '] ' + d.title + ' ' + d.docs_url })
+
+tests:
+  - description: Assert Ansible definition
+    vars:
+      user_query: hello
+
