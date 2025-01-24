@@ -1,0 +1,14 @@
+id: https
+config:
+  url: "https://stage.ai.ansible.redhat.com/api/v0/ai/chat/"
+  maxRetries: 1
+  method: 'POST'
+  headers:
+    'Accept': 'application/json'
+    'Content-Type': 'application/json'
+    'Authorization': 'Bearer {{env.CHATBOT_STAGE_TOKEN}}'
+  body:
+    query: '{{prompt}}'
+    model: 'granite3-8b'
+    provider: 'my_rhoai_g3'
+  transformResponse: 'json.response'

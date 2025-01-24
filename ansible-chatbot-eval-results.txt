@@ -1,0 +1,82 @@
+┌────────────────────────────────────────┬────────────────────────────────────────┬────────────────────────────────────────┐
+│ ground_truth_answer                    │ user_query                             │ [https://stage.ai.ansible.redhat.com/… │
+│                                        │                                        │ {{user_query}}                         │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ Ansible Automation Platform is a       │ What is Ansible Automation Platform?   │ [PASS] Ansible Automation Platform is  │
+│ unified automation solution that       │                                        │ a unified automation solution provided │
+│ automates a variety of IT processes,   │                                        │ by Red Hat that automates various IT   │
+│ including provisioning, configuration  │                                        │ processes, including provisioning,     │
+│ management, application deployment,    │                                        │ configuration management, application  │
+│ orchestration, and security and        │                                        │ deployment, orchestration, and         │
+│ compliance changes (including          │                                        │ security and compliance changes. It    │
+│ patching...                            │                                        │ ...                                    │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ AAP is an acronym for Red Hat Ansible  │ What is AAP?                           │ [PASS] Ansible Automation Platform     │
+│ Automation Platform.  Red Hat Ansible  │                                        │ (AAP) is a paid subscription service   │
+│ Automation Platform is a unified       │                                        │ provided by Red Hat, which offers      │
+│ automation solution that automates a   │                                        │ additional features and support beyond │
+│ variety of IT processes, including     │                                        │ the open-source Ansible project. It    │
+│ provisioning, configuration            │                                        │ includes services like Ansible Tower,  │
+│ management, application deployment,    │                                        │ Ansible Network Automation, and Ans... │
+│ or...                                  │                                        │                                        │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ Ansible is an open-source automation   │ What is the difference between Ansible │ [PASS] Ansible is an open-source IT    │
+│ tool that can be used to automate      │ and Ansible Automation Platform?       │ automation engine that automates       │
+│ various IT tasks, such as              │                                        │ provisioning, configuration            │
+│ configuration management, application  │                                        │ management, application deployment,    │
+│ deployment, and orchestration. It uses │                                        │ orchestration, and many other IT       │
+│ a simple and agentless approach to     │                                        │ processes. It is free to use and does  │
+│ manage nodes in a network, which       │                                        │ not require any paid subscription.     │
+│ means...                               │                                        │ Ansible Automa...                      │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ To schedule tasks in Ansible           │ How do I schedule tasks in Ansible     │ [PASS] To schedule tasks in Ansible    │
+│ Automation Platform, you can use the   │ Automation Platform?                   │ Automation Platform, you can follow    │
+│ built-in scheduling feature. Here are  │                                        │ these steps:                           │
+│ the steps to create a schedule:        │                                        │ 1. From the navigation panel, select   │
+│ Log in to the AAP web interface using  │                                        │ "Automation Execution" and then        │
+│ your administrative credentials.       │                                        │ "Schedules".                           │
+│ Click on the "Schedules" option in the │                                        │ 2. Click "Create schedule" to open the │
+│ l...                                   │                                        │ Create Schedule window.                │
+│                                        │                                        │ 3. Select a Resource ty...             │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ The Ansible Automation Platform REST   │ What is the Ansible Automation         │ [PASS] The Ansible Automation Platform │
+│ API is a set of endpoints that allow   │ Platform REST API and how do I use it? │ REST API is a set of tools that allows │
+│ you to interact with the Ansible       │                                        │ you to interact with and manage each   │
+│ Automation Platform programmatically.  │                                        │ part of the platform. It is versioned  │
+│ You can use the API to perform various │                                        │ for compatibility reasons and you can  │
+│ tasks, such as creating and managing   │                                        │ see what API versions are available by │
+│ inventory, managing playbo...          │                                        │ querying /api/.                        │
+│                                        │                                        │ To use ...                             │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ In order to manage Ansible Automation  │ How do I manage Ansible Automation     │ [PASS] To manage Ansible Automation    │
+│ Platform settings you must first log   │ Platform settings?                     │ Platform settings, you can use the     │
+│ in as a system administrator.  After   │                                        │ Settings menu of the User Interface.   │
+│ logging in as a system administrator,  │                                        │ This menu allows you to configure      │
+│ you'll be presented with a number of   │                                        │ various options, such as:              │
+│ options under the Settings navigation  │                                        │ * Configuring subscriptions            │
+│ section: Subscription,...              │                                        │ * Platform gateway                     │
+│                                        │                                        │ * User preferences                     │
+│                                        │                                        │ * Configuring jobs                     │
+│                                        │                                        │ ...                                    │
+├────────────────────────────────────────┼────────────────────────────────────────┼────────────────────────────────────────┤
+│ Red Hat Ansible Lightspeed with IBM    │ What is Ansible Lightspeed?            │ [PASS] Ansible Lightspeed is a         │
+│ watsonx Code Assistant is a generative │                                        │ generative AI service designed by and  │
+│ AI service that helps automation teams │                                        │ for Ansible platform engineers and     │
+│ create, adopt, and maintain Ansible    │                                        │ developers. It accepts                 │
+│ content more efficiently. It uses      │                                        │ natural-language prompts and interacts │
+│ natural language prompts to generate   │                                        │ with IBM watsonx foundation models to  │
+│ code recommendations for a...          │                                        │ produce code recommendations built on  │
+│                                        │                                        │ Ansible best...                        │
+└────────────────────────────────────────┴────────────────────────────────────────┴────────────────────────────────────────┘
+Writing output to ansible-chatbot-eval-out.json, ansible-chatbot-eval-out.html
+========================================================================================================================
+✔ Evaluation complete.
+» Run promptfoo view to use the local web viewer
+» Run promptfoo share to create a shareable URL
+» This project needs your feedback. What's one thing we can improve? https://forms.gle/YFLgTe1dKJKNSCsU7
+========================================================================================================================
+Successes: 7
+Failures: 0
+Errors: 0
+Pass Rate: 100.00%
+Done.
