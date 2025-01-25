@@ -172,3 +172,7 @@ cython_debug/
 
 # promptfoo configuration dir.
 .promptfoo
+
+# Puthon virtual env. for performance tests.
+performance-tests/perf-tests-venv
+performance-tests/data
